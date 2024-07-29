@@ -1,0 +1,132 @@
+.AboutCompany {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .title {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3rem;
+  }
+
+  .description {
+    color: #555;
+    line-height: 1.8;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .advantages-section {
+    background-color: #f1f1f1; // Светло-серый фон для секции с преимуществами
+    border-top: 1px solid #ddd; // Разделительная линия сверху
+    padding: 2rem 1rem; // Добавляем отступы
+  }
+
+  .section-title {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .advantage-item {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding-top: 4rem; // Увеличил отступ сверху для иконки
+
+    .icon-container {
+      background: linear-gradient(to right, #d0eaff, #0033a0); // Градиент для иконок
+      padding: 1.5rem; // Увеличил отступы для контейнера
+      border-radius: 50%;
+      position: absolute;
+      top: -2rem; // Поднял контейнер с иконками выше
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1; // Убедитесь, что контейнер не перекрывается другими элементами
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-image {
+      width: 4rem; // Увеличил размер иконки
+      height: 4rem;
+      object-fit: cover;
+
+    }
+
+    .text-dark-gray {
+      color: #333;
+    }
+
+    .text-gray-600 {
+      color: #666;
+    }
+
+    .text-gray-700 {
+      color: #555;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // Адаптивные стили
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.75rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+
+    .advantage-item {
+      padding: 1.5rem;
+      padding-top: 3rem; // Увеличил отступ сверху для иконки
+
+      .icon-container {
+        padding: 1.25rem;
+        top: -1.5rem; // Поднял иконку ближе к блоку
+      }
+
+      .icon-image {
+        width: 3rem; // Уменьшил размер иконки для мобильных устройств
+        height: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+    }
+
+    .advantage-item {
+      padding: 1rem;
+      padding-top: 2.5rem; // Увеличил отступ сверху для иконки
+
+      .icon-container {
+        padding: 1rem;
+        top: -1.25rem; // Поднял иконку ближе к блоку
+      }
+
+      .icon-image {
+        width: 2.5rem; // Уменьшил размер иконки для мобильных устройств
+        height: 2.5rem;
+      }
+    }
+  }
+}

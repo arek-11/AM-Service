@@ -1,0 +1,48 @@
+.advantages {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        li {
+            flex: 1 1 30%;
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            .icon {
+                color: #2A94D6;
+                /* Цвет иконок */
+                margin-bottom: 1rem;
+                font-size: 3rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                color: #333;
+                margin-bottom: 1rem;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+    }
+}

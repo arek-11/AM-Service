@@ -1,0 +1,43 @@
+// NotFoundPage.scss
+
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found-title {
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.not-found-message {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.go-home-button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #005bb5;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
