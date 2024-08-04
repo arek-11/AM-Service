@@ -8,6 +8,7 @@ const phoneModels = [
   'iPhone 15',
   'iPhone 14 Pro Max',
   'iPhone 14 Pro',
+  'iPhone 14 Plus',
   'iPhone 14 Mini',
   'iPhone 14',
   'iPhone 13 Pro Max',
@@ -21,6 +22,9 @@ const phoneModels = [
   'iPhone 11 Pro Max',
   'iPhone 11 Pro',
   'iPhone 11',
+  'iPhone Xr',
+  'iPhone Xs',
+  'iPhone X',
   'iPhone SE (2022)',
 ];
 
