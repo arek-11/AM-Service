@@ -12,7 +12,7 @@ export function App() {
         { id: 1, title: 'Главная', route: '/' },
         { id: 2, title: 'О нас', route: '/about' },
         { id: 3, title: 'Контакты', route: '/contacts' },
-        { id: 4, title: 'Услуги', route: '/services' }
+        { id: 4, title: 'Услуги', route: '/services' },
     ]);
 
     const [products] = useState([

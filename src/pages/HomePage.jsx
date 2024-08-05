@@ -1,9 +1,7 @@
-import React from 'react'
-import { SendPhoneNumber } from '../components/SendPhoneNumber'
-import { AboutCompany } from '../components/AboutCompany'
-import { Products } from '../components/Products'
-
-
+import React from 'react';
+import { SendPhoneNumber } from '../components/SendPhoneNumber';
+import { AboutCompany } from '../components/AboutCompany';
+import { Products } from '../components/Products';
 
 export function HomePage({ products, advantages }) {
   return (
@@ -12,5 +10,5 @@ export function HomePage({ products, advantages }) {
       <AboutCompany advantages={advantages} />
       <Products products={products} />
     </div>
-  )
+  );
 }
